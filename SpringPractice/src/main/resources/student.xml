@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd"> 
+    
+    <bean class="com.tut.springpractice.collection.Student" name="student">
+    	<property name="name" value="A"/>
+    	
+    	<property name="phones">
+    		<list>
+    			<value>732154</value>
+    			<value>3243534</value>
+    			<value>73276554</value>
+    			<value>29784</value>
+    		</list>
+    	</property>
+    	
+    	<property name="address">
+    		<set>
+				<value>Gurugram</value>
+				<value>Banglore</value>
+			</set>
+    	</property>
+    	
+    	<property name="courses">
+    		<map>
+    			<entry key="java" value="4 Months"/>
+    			<entry key="spring" value="1 Month"/>
+    		</map>
+    	</property>
+    	
+    </bean>
+    
+ </beans>

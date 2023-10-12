@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd"> 
+    
+    <bean class="com.tut.autowiring.Address" name="address">
+    <property name="street" value="one"/>
+    <property name="city" value="Noida"/>
+    </bean>
+    
+    <!-- Here bean name and class type k var ka name same hona chahiye -->
+    <!--  <bean class="com.tut.autowiring.Emp" name="emp1" autowire="byName">
+    </bean>  -->
+    
+    
+    <!-- jo class mai Class type ka var hai to kya us type ka koi bean hai -->
+    <bean class="com.tut.autowiring.Emp" name="emp1" autowire="byType">
+    </bean>
+    
+ </beans>
